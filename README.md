@@ -17,8 +17,10 @@ CREATE:
 	        Json::value obj;
 
 	         CreateDataStore (Key, Value)
+		 
 3. If Create is invoked for an existing key, an appropriate error must be returned. 
-	          CreateDataStore (Key, Value)
+	        
+		CreateDataStore (Key, Value)
 	          {	
                 if(key[x] = key [n])
 			            return “error existing key cannot be created”;
@@ -29,6 +31,8 @@ CREATE:
 READ:
 
 4. A Read operation on a key can be performed by providing the key, and receiving the value in response, as a JSON object. 
+	
+	
 	ReadDataStore (Key, Value)
 
 DELETE:
